@@ -5,5 +5,6 @@ RUN cd / \
  && git clone https://github.com/saildeep/openstreetmap-carto.git \
  && cd openstreetmap-carto \
  && git checkout $BRANCH \
- && carto project.mml > /home/renderer/src/openstreetmap-carto/mapnik.xml
+ && carto project.mml > /home/renderer/src/openstreetmap-carto/mapnik.xml \
+ && cp ./symbols/shields/blank.svg /home/renderer/src/openstreetmap-carto/symbols/shields/
 EXPOSE 80 5432
