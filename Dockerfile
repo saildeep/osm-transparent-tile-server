@@ -6,5 +6,5 @@ RUN cd / \
  && cd openstreetmap-carto \
  && git checkout $BRANCH \
  && carto project.mml > /home/renderer/src/openstreetmap-carto/mapnik.xml \
- && cp ./symbols/shields/blank.svg /home/renderer/src/openstreetmap-carto/symbols/shields/blank.svg
+ && cp /openstreetmap-carto/symbols/shields/blank.svg /home/renderer/src/openstreetmap-carto/symbols/shields/
 EXPOSE 80 5432
